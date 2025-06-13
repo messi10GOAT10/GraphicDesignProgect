@@ -31,6 +31,13 @@ input:focus-visible {
   transition: all 0.7s;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 57px;
+  color: #f4bdbd;
+  text-transform: uppercase;
+}
+
 .general-btn:hover {
   scale: 1.1;
   background: #000000;
@@ -152,11 +159,79 @@ input:focus-visible {
   padding: 18px 30px;
 }
 
-.main {
-  display: flex;
+.main-wrapper {
+  background: url(/img/task-bg.png) no-repeat center/cover;
 }
-.main-title {
-  font-weight: 700;
-  font-size: 57px;
-  color: #f4bdbd;
+.main-cards-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-cards-item:nth-child(1) {
+  position: relative;
+  background: url(/img/task-item-bg-1.png) no-repeat center/cover;
+  width: 400px;
+  height: 200px;
+}
+.main-cards-item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  background: url(/img/task-heart.png) no-repeat center/cover;
+  width: 185px;
+  height: 185px;
+  right: -350px;
+}
+.main-cards-item:nth-child(2) {
+  margin-left: 120px;
+  position: relative;
+  top: -40px;
+  background: url(/img/task-item-bg-2.png) no-repeat center/cover;
+  width: 400px;
+  height: 400px;
+  flex-direction: column;
+  color: #eee;
+  padding-top: 100px;
+  justify-content: flex-start;
+}
+.main-cards-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  background: url(/img/task-message.png) no-repeat center/cover;
+  width: 225px;
+  height: 225px;
+  right: -390px;
+  top: -30;
+}
+.main-cards-item:nth-child(2) h4, .main-cards-item:nth-child(2) p {
+  width: 190px;
+}
+.main-cards-item:nth-child(2) h4 {
+  margin-bottom: 30px;
+}
+.main-cards-item:nth-child(3) {
+  margin-left: 240px;
+  position: relative;
+  top: -200px;
+  background: url(/img/task-item-bg-3.png) no-repeat center/cover;
+  width: 500px;
+  height: 440px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main-cards-item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background: url(/img/task-laptop.png) no-repeat center/cover;
+  width: 270px;
+  height: 270px;
+  right: -350px;
+}
+.main-cards-item:nth-child(3) h4, .main-cards-item:nth-child(3) p {
+  text-align: right;
+  width: 190px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.main-cards-item:nth-child(3) h4 {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
