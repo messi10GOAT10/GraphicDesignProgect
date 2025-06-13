@@ -28,11 +28,13 @@ input:focus-visible {
   cursor: pointer;
   color: white;
   font-size: 17px;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 
 .general-btn:hover {
   scale: 1.1;
+  background: #000000;
+  border: 5px solid #D80808;
 }
 
 .header-wrapper {
@@ -48,14 +50,14 @@ input:focus-visible {
 .header-circle::before, .header-circle::after {
   position: absolute;
   content: "Graphic";
-  text-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 8px 3px 2px #CE2F14;
   font-weight: 700;
   font-size: 96px;
   line-height: 100%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
   top: 150px;
-  left: -130px;
+  left: -150px;
   color: #eee;
   z-index: 2;
 }
@@ -64,6 +66,46 @@ input:focus-visible {
   top: 70%;
   left: 73%;
   z-index: 2;
+}
+.header-circle-gradient-1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #1d1919 0%, #FF0000 80%);
+  position: absolute;
+  top: 650px;
+  left: 50px;
+}
+.header-circle-gradient-text-1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 147%;
+  letter-spacing: 0.05em;
+  color: #f00;
+  width: 300px;
+  position: absolute;
+  top: 720px;
+  left: -180px;
+}
+.header-circle-gradient-2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #3f2424 0%, #A67373 80%);
+  position: absolute;
+  top: 160px;
+  left: 700px;
+}
+.header-circle-gradient-text-2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 147%;
+  letter-spacing: 0.05em;
+  color: #BB9292;
+  width: 300px;
+  position: absolute;
+  top: 150px;
+  left: 775px;
 }
 .header-circle-poster {
   max-width: 100%;
@@ -80,7 +122,6 @@ input:focus-visible {
   height: 700px;
   border-radius: 50%;
   background: radial-gradient(circle at top, #000000 0%, #721010 80%);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   position: absolute;
   left: 60px;
   top: 80px;
@@ -109,4 +150,13 @@ input:focus-visible {
 }
 .nav-contact {
   padding: 18px 30px;
+}
+
+.main {
+  display: flex;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 57px;
+  color: #f4bdbd;
 }/*# sourceMappingURL=style.css.map */

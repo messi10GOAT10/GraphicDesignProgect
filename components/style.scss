@@ -1,22 +1,5 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-$buttonBg: #d80808;
-$White: white;
-li{
-    list-style: none;
-}
-button, input{
-    background: none;
-    border: none;
-}
-input:focus-visible{
-    outline: none;
-}
-
+@import 'reset.scss';
+@import 'colors.scss';
 .container{
     padding: 30px 70px;
     margin: 0 auto;
@@ -27,10 +10,13 @@ input:focus-visible{
     cursor: pointer;
     color: $White;
     font-size: 17px;
-    transition: all .5s;
+    transition: all .7s;
 }
 .general-btn:hover{
     scale: 1.1;
+    background: #000000;
+    border: 5px solid #D80808;
+
 }
 .header{
     &-wrapper{
@@ -45,14 +31,14 @@ input:focus-visible{
          &::before,&::after{
             position: absolute;
             content: 'Graphic';
-            text-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+            text-shadow: 8px 3px 2px #CE2F14;
             font-weight: 700;
             font-size: 96px;
             line-height: 100%;
             letter-spacing: 0.01em;
             text-transform: uppercase;
             top: 150px;
-            left: -130px;
+            left: -150px;
             color: #eee;
              z-index: 2;
         }
@@ -61,6 +47,47 @@ input:focus-visible{
             top: 70%;
             left: 73%;
             z-index: 2;
+        }
+        &-gradient-1{
+            width: 70px;            
+            height: 70px;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, #1d1919 0%, #FF0000 80%);
+            position: absolute;
+            top: 650px;
+            left: 50px;
+        }
+        &-gradient-text-1{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 147%;
+            letter-spacing: 0.05em;
+            color: #f00;
+            width: 300px;
+            position: absolute;
+            top: 720px;
+            left:-180px;
+        }
+        
+        &-gradient-2{
+            width: 70px;            
+            height: 70px;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, #3f2424 0%, #A67373 80%);
+            position: absolute;
+            top: 160px;
+            left: 700px;
+        }
+        &-gradient-text-2{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 147%;
+            letter-spacing: 0.05em;
+            color: #BB9292;
+            width: 300px;
+            position: absolute;
+            top: 150px;
+            left:775px;
         }
         &-poster{
             max-width: 100%;
@@ -76,7 +103,6 @@ input:focus-visible{
             height: 700px;
             border-radius: 50%;
             background: radial-gradient(circle at top, #000000 0%, #721010 80%);
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
             position: absolute;
             left: 60px;
             top: 80px;
@@ -104,5 +130,14 @@ input:focus-visible{
     }
     &-contact{
         padding: 18px 30px;
+    }
+}
+
+.main{
+    display: flex;
+    &-title{
+        font-weight: 700;
+        font-size: 57px;
+        color: #f4bdbd;
     }
 }
