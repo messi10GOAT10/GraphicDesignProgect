@@ -277,11 +277,14 @@
         font-weight: 700;
         font-size: 57px;
         color: #e4cfcf;
+        align-self: flex-start;
     }
     &-cards{
         display: flex;
         flex-wrap: wrap;
         row-gap: 80px;
+        column-gap: 220px;
+        justify-content: center;
         &-item{
             width: 34%;
             display: flex;
@@ -304,5 +307,32 @@
         border-radius: 27px;
         width: 184px;
         height: 63px;
+    }
+}
+.reviews{
+    &-wrapper{
+        background: url(/img/task-bg.png) no-repeat center/cover;
+    }
+    &-cards{
+        &-item{
+            position: relative;
+            &-poster{
+                position: absolute;
+            }
+            &-comment{
+                position: absolute;
+            }
+        }
+    }
+    &-1{
+        left: 6%;
+    }
+    &-2{
+        left: 33%;
+        top: 100px;
+    }
+    &-3{
+        left: 63%;
+        bottom: 300px;
     }
 }

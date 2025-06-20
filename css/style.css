@@ -294,11 +294,15 @@ input:focus-visible {
   font-weight: 700;
   font-size: 57px;
   color: #e4cfcf;
+  align-self: flex-start;
 }
 .section-cards {
   display: flex;
   flex-wrap: wrap;
   row-gap: 80px;
+  -moz-column-gap: 220px;
+       column-gap: 220px;
+  justify-content: center;
 }
 .section-cards-item {
   width: 34%;
@@ -321,4 +325,28 @@ input:focus-visible {
   border-radius: 27px;
   width: 184px;
   height: 63px;
+}
+
+.reviews-wrapper {
+  background: url(/img/task-bg.png) no-repeat center/cover;
+}
+.reviews-cards-item {
+  position: relative;
+}
+.reviews-cards-item-poster {
+  position: absolute;
+}
+.reviews-cards-item-comment {
+  position: absolute;
+}
+.reviews-1 {
+  left: 6%;
+}
+.reviews-2 {
+  left: 33%;
+  top: 100px;
+}
+.reviews-3 {
+  left: 63%;
+  bottom: 300px;
 }/*# sourceMappingURL=style.css.map */
