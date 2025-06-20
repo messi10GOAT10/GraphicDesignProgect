@@ -17,6 +17,7 @@
     font-size: 57px;
     color: #f4bdbd;
     text-transform: uppercase;
+    text-shadow: 8px 3px 2px #000000;
 }
 .general-btn:hover{
     scale: 1.1;
@@ -140,8 +141,14 @@
 }
 
 .main{
+     margin: 0 auto;
+        height: 1000px;
+        width: 1100px;
+        position: relative;
     &-wrapper{
         background: url(/img/task-bg.png) no-repeat center/cover;
+        align-items: center;
+        justify-content: center;
     }
     &-cards{
         &-item{
@@ -152,13 +159,24 @@
                 
             }
             &-desk{
-
+                font-weight: 700;
+                font-size: 18px;
             }
             &:nth-child(1){
                 position: relative;
                 background: url(/img/task-item-bg-1.png) no-repeat center/cover;
                 width: 400px;
-                height: 200px;
+                height: 250px;
+                &::before{
+                    content:'1';
+                    font-weight: 700;
+                    font-size: 210px;
+                    color: #1e0202;
+                    position: absolute;
+                    right: 280px;
+                    top: 50px;
+                    text-shadow: 2px 2px 0 #7a1b1b94, 2px -2px 0 #7a1b1b94, -2px 2px 0 #7a1b1b94, -2px -2px 0 #7a1b1b94, 2px 0px 0 #7a1b1b94, 0px 2px 0 #7a1b1b94, -2px 0px 0 #7a1b1b94, 0px -2px 0 #7a1b1b94, 2px 2px 2px rgba(206,0,0,0);
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -166,6 +184,9 @@
                     width: 185px;
                     height: 185px;
                     right: -350px;
+                }
+                p{
+                    width: 160px;
                 }
             }
             &:nth-child(2){
@@ -179,6 +200,16 @@
                 color: #eee;
                 padding-top: 100px;
                 justify-content: flex-start;
+                &::before{
+                    content:'2';
+                    font-weight: 700;
+                    font-size: 200px;
+                    color: #f0c9c9;
+                    position: absolute;
+                    right: 280px;
+                    top: 170px;
+                    text-shadow: 2px 2px 0 gray, 2px -2px 0 gray, -2px 2px 0 gray, -2px -2px 0 gray, 2px 0px 0 gray, 0px 2px 0 gray, -2px 0px 0 gray, 0px -2px 0 gray, 2px 2px 2px rgba(206,0,0,0);
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -204,6 +235,16 @@
                 height: 440px;
                 flex-direction: column;
                 align-items: flex-end;
+                &::before{
+                    content: '3';
+                    font-weight: 700;
+                    font-size: 200px;
+                    color: #fb0909;
+                    position: absolute;
+                    right: 370px;
+                    top: 220px;
+                    text-shadow: 2px 2px 0 #7a1b1b94, 2px -2px 0 #7a1b1b94, -2px 2px 0 #7a1b1b94, -2px -2px 0 #7a1b1b94, 2px 0px 0 #7a1b1b94, 0px 2px 0 #7a1b1b94, -2px 0px 0 #7a1b1b94, 0px -2px 0 #7a1b1b94, 2px 2px 2px rgba(206,0,0,0);
+                }
                 &::after{
                     content: '';
                     position: absolute;
@@ -223,5 +264,45 @@
                 }
             }
         }
+    }
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    &-wrapper{
+        background: url(/img/Header-bg.jpg) no-repeat center/cover;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 57px;
+        color: #e4cfcf;
+    }
+    &-cards{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 80px;
+        &-item{
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+            &-poster{
+                width: 100%;
+                height: 230px;
+            }
+            &-title{
+                font-weight: 900;
+                font-size: 18px;
+                color: #fff;
+            }
+            &-desc{
+             color: #fff;   
+            }
+        }
+    }
+    &-more{
+        border-radius: 27px;
+        width: 184px;
+        height: 63px;
     }
 }
