@@ -143,6 +143,87 @@
     &-contact{
         padding: 18px 30px;
     }
+    &-burgermenu-form{
+        display: none;
+        flex-direction: column;
+        &-child-1{
+            border-radius: 11px;
+            width: 50px;
+            height: 7px;
+            background: #f00;
+            margin-top: 6px;
+        }
+        &-child-2{
+            border-radius: 11px;
+            width: 40px;
+            height: 6px;
+            background: #f00;
+            margin-top: 6px;
+        }
+        &-child-3{
+            border-radius: 11px;
+            width: 32px;
+            height: 5px;
+            background: #f00;
+            margin-top: 6px;
+        }
+    }
+    &-burgermenu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 31px;
+        width: 295px;
+        height: 468px;
+        background: rgba(175, 3, 3, 0.89);
+        &-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 50%;
+            letter-spacing: -0.04em;
+            color: #ededed;
+            margin-bottom: 40px;
+        }
+        &-button-1{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #efe5e5;
+            border-radius: 13px;
+            width: 196px;
+            height: 40px;
+            background: rgba(70, 0, 0, 0.96);
+            border: 7px solid rgba(148, 0, 0, 0.27);;
+            margin-top: 15px;
+        }
+        &-button-2{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #000;
+            border: 5px solid rgba(231, 11, 11, 0.9);
+            border-radius: 13px;
+            width: 151px;
+            height: 31px;
+            background: rgba(148, 5, 5, 0.53);
+            margin-top: 15px;
+        }
+        &-close{
+            margin-top: 26px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0.05em;
+            color: #000;
+            border-radius: 27px;
+            width: 99px;
+            height: 32px;
+            background: #d80808;
+        }
+    }
 }
 
 .main{
@@ -478,5 +559,96 @@
         font-weight: 800;
         color: #E5DEDE;
         margin-bottom: 120px;
+    }
+}
+
+
+@media (max-width: 426px) {
+    .header{
+        height: 648px;
+    }
+    .nav-burgermenu{
+        display: flex;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-contact{
+        position: absolute;
+        top: 280px;
+        z-index: 5;
+        border-radius: 27px;
+        width: 149px;
+        height: 53px;
+        font-weight: 900;
+        font-size:14px;
+    }
+    .header-circle{
+        height: 435px;
+        width: 410px;
+        margin-left: 60px;
+        margin-top: 70px;
+    }
+    .header-circle::before{
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #eee;
+        text-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+        left: -20px;
+        top: 60px;
+    }
+    .header-circle::after{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 307%;
+        letter-spacing: 0.03em;
+        color: #eee;
+        text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        left: -20px;
+        top: 70px;
+    }
+    .header-circle-backside{
+        width: 350px;
+        height: 350px;
+        top: 40px;
+        left: 30px;
+    }
+    .header-circle-poster{
+        left: 40px;
+    }
+    .header-circle-gradient-1{
+        left: 50px;
+        top: 350px;
+        width: 30px;
+        height: 30px;
+    }
+    .header-circle-gradient-text-1{
+        left: -90px;
+        top: 380px;
+        width: 140px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+    }
+    .header-circle-gradient-2{
+        left: 120px;
+        top: 400px;
+        width: 30px;
+        height: 30px;
+    }
+    .header-circle-gradient-text-2{
+        left: 75px;
+        top: 440px;
+        width: 140px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
     }
 }
