@@ -588,9 +588,6 @@ input:focus-visible {
   .header {
     height: 648px;
   }
-  .nav-burgermenu {
-    display: flex;
-  }
   .nav-list {
     display: none;
   }
