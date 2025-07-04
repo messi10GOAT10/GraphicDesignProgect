@@ -15,7 +15,8 @@ document.addEventListener('keydown',function(e){
 openModal.addEventListener('click', function(){
     overlay.style.display = 'flex';
 })
-overlay.addEventListener('click',function(e){
-    alert('Closed')
-    overlay.style.display = 'none';
+document.addEventListener('keydown',function(e){
+    if(e.key == 'Escape'){
+        overlay.style.display = 'none'
+    }
 })

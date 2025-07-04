@@ -3,6 +3,11 @@
 .container{
     padding: 30px 70px;
     margin: 0 auto;
+    @media (max-width: 426px) {
+        &{
+            padding: 22px 22px 108px 22px;
+        }
+    }
 }
 .general-btn{
     background: $buttonBg;
@@ -286,6 +291,11 @@
                     width: 185px;
                     height: 185px;
                     right: -350px;
+                    @media (max-width: 426px) {
+                        &{
+                            display: none;
+                        }
+                    }
                 }
                 p{
                     width: 160px;
@@ -302,6 +312,11 @@
                 color: #eee;
                 padding-top: 100px;
                 justify-content: flex-start;
+                @media (max-width: 426px) {
+                        &{
+                            margin-left: 0px;
+                        }
+                    }
                 &::before{
                     content:'2';
                     font-weight: 700;
@@ -320,6 +335,11 @@
                     height: 225px;
                     right: -390px;
                     top: -30;
+                    @media (max-width: 426px) {
+                        &{
+                            display: none;
+                        }
+                    }
                 }
                 & h4, p{
                     width: 190px;
@@ -337,6 +357,11 @@
                 height: 440px;
                 flex-direction: column;
                 align-items: flex-end;
+                @media (max-width: 426px) {
+                        &{
+                            margin-left: 0px;
+                        }
+                    }
                 &::before{
                     content: '3';
                     font-weight: 700;
@@ -354,6 +379,11 @@
                     width: 270px;
                     height: 270px;
                     right: -350px;
+                    @media (max-width: 426px) {
+                        &{
+                            display: none;
+                        }
+                    }
                 }
                 & h4, & p{
                     text-align: right;
@@ -388,7 +418,7 @@
         column-gap: 220px;
         justify-content: center;
         &-item{
-            width: 34%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             &-poster{
@@ -412,6 +442,14 @@
     }
 }
 .reviews{
+    &-conatainer-parent-icons{
+        @media (max-width: 426px) {
+                        &{
+                            display: flex;
+                            width: 100%;
+                        }
+                    }
+    }
     &-wrapper{
         background: url(/img/task-bg.png) no-repeat center/cover;
     }
@@ -445,6 +483,12 @@
         margin: 0 auto;
         margin-top: 400px;
         padding-top: 20px;
+        @media (max-width: 426px) {
+                        &{
+                            width: 102vw;
+                            margin-left: -30px;
+                        }
+                    }
         &-inside{
             background: url(/img/cooperation-container-inside-bg.png) no-repeat center/cover;
             border-radius: 19px;
@@ -454,6 +498,12 @@
             margin-top: 10px;
             padding: 40px;
             display: flex;
+            @media (max-width: 426px) {
+                        &{
+                            width: 100%;
+                            flex-direction: column;
+                        }
+                    }
         }
         &-title{
             font-weight: 700;
@@ -465,12 +515,22 @@
             border: 2px solid #000;
             width: 558px;
             height: 0px;
+            @media (max-width: 426px) {
+                        &{
+                            width: 100%;
+                        }
+                    }
         }
        &-desc{
             font-size: 15px;
             letter-spacing: 0.06em;
             color: #e8d6d6;
             width: 450px; 
+            @media (max-width: 426px) {
+                        &{
+                            width: 100%;
+                        }
+                    }
         }
         &-icon-1{
             margin-bottom: 40px;
