@@ -1,7 +1,7 @@
 const openModal = document.querySelector('.reviews-cooperation-container-contact')
 const overlay = document.querySelector('.overlay')
 const navBurgermenuForm = document.querySelector('.nav-burgermenu-form')
-const navBurgermenu = document.querySelector('.nav-burgermenu')
+const navBurgermenu = document.querySelector('.nav-burgermenu-overlay')
 
 navBurgermenuForm.addEventListener('click',function(){
     navBurgermenu.style.display = 'flex'

@@ -169,6 +169,12 @@ input:focus-visible {
 .nav-burgermenu-form {
   display: none;
   flex-direction: column;
+  cursor: pointer;
+}
+@media (max-width: 426px) {
+  .nav-burgermenu-form {
+    display: flex;
+  }
 }
 .nav-burgermenu-form-child-1 {
   border-radius: 11px;
@@ -192,7 +198,7 @@ input:focus-visible {
   margin-top: 6px;
 }
 .nav-burgermenu {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -200,6 +206,18 @@ input:focus-visible {
   width: 295px;
   height: 468px;
   background: rgba(175, 3, 3, 0.89);
+}
+.nav-burgermenu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.5);
 }
 .nav-burgermenu-title {
   font-weight: 700;
